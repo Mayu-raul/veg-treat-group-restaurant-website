@@ -1,0 +1,17 @@
+{
+  "name": "veg-treat-group-website",
+  "version": "1.0.0",
+  "description": "Premium multi-location restaurant website for The Veg Treat Group",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1"
+  },
+  "keywords": [
+    "restaurant",
+    "website",
+    "veg-treat",
+    "spa"
+  ],
+  "author": "The Veg Treat Group",
+  "license": "ISC"
+}

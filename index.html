@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>The Veg Treat Group | Premium Multi-Location Vegetarian Dining & Banquets</title>
+  <meta name="description" content="Experience premium contemporary pure vegetarian dining, luxury banquets, and boutique hotels across Borivali and Dahisar. Order online, reserve tables, and book banquets instantly.">
+  <meta name="keywords" content="The Veg Treat, Veg Treat Regalia, Solitaire Banquet, Royale Banquets, FoodLord, Borivali restaurants, pure veg banquets, Mumbai pure veg fine dining, online table reservation">
+  <meta name="author" content="The Veg Treat Group of Hotels">
+  
+  <!-- OpenGraph Social Tags -->
+  <meta property="og:title" content="The Veg Treat Group - Delivering Pure Happiness Since 1967">
+  <meta property="og:description" content="Experience premium contemporary pure vegetarian dining, luxury banquets, and boutique hotels. Reserve tables and order food online.">
+  <meta property="og:image" content="assets/hero_food.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER SECTION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" id="header-brand-logo">
+        <div class="logo-icon">VT</div>
+        <div style="display: flex; flex-direction: column; line-height: 1;">
+          <strong style="letter-spacing: 1px; font-size: 1.15rem;">THE VEG TREAT</strong>
+          <span style="font-size: 0.65rem; color: var(--primary-gold); letter-spacing: 2px; font-weight: 500;">GROUP OF HOTELS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="header-nav-menu">
+          <li><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
+          <li><a href="#locations" class="nav-link" id="nav-link-locations">Locations</a></li>
+          <li><a href="#reservations" class="nav-link" id="nav-link-reservations">Reservations</a></li>
+          <li><a href="#careers" class="nav-link" id="nav-link-careers">Careers</a></li>
+          <li><a href="#blog" class="nav-link" id="nav-link-blog">Blog</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+          <li><a href="#admin" class="nav-link" id="nav-link-admin" style="border: 1px dashed var(--primary-gold); padding: 4px 8px; border-radius: 4px;">Admin Panel</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions Area (Language Switcher, Cart Trigger, Mobile Toggle) -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <select class="lang-switch" id="header-lang-switcher" aria-label="Select Language">
+          <option value="en">EN</option>
+          <option value="hi">हिन्दी</option>
+        
+        </select>
+        
+        <!-- Cart Basket Toggle button -->
+        <button class="cart-toggle" id="header-cart-toggle-btn" aria-label="Shopping Cart">
+          <span>🛒</span>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="mobile-menu-btn" id="mobile-menu-toggle" onclick="alert('Navigation Menu: Use links below in the Footer for quick access!')">☰</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN VIEWPORT CONTAINER (DYNAMIC SPA CONTENT)
+       ========================================================================== -->
+  <main id="app-viewport" class="fade-in">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <!-- ==========================================================================
+       CART / ONLINE ORDER DRAWER PANEL
+       ========================================================================== -->
+  <div class="cart-overlay" id="cart-drawer-overlay"></div>
+  <div class="cart-drawer" id="shopping-cart-drawer">
+    <div class="cart-header">
+      <h3 data-translate="cartTitle">Your Dining Cart</h3>
+      <div class="cart-close" id="cart-drawer-close-btn">&times;</div>
+    </div>
+    <!-- Cart Items Scroll Area -->
+    <div class="cart-items">
+      <!-- Populated dynamically by app.js -->
+    </div>
+    <!-- Pricing Summary Footer -->
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span data-translate="subtotal">Subtotal</span>
+        <span class="cart-total-val">₹0</span>
+      </div>
+      <div class="cart-summary-row">
+        <span data-translate="taxCharges">GST & Service Charges (18%)</span>
+        <span class="cart-tax-val">₹0</span>
+      </div>
+      <div class="cart-summary-row cart-total">
+        <span data-translate="grandTotal">Grand Total</span>
+        <span class="cart-grand-val" style="color: var(--primary-gold);">₹0</span>
+      </div>
+      <a href="#checkout" class="btn btn-primary" style="width: 100%; margin-top: 16px; display: none;" data-translate="checkoutBtn">Proceed to Order</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STATUS POPUP OVERLAY (CONFIRMATIONS / RECEIPT CODES)
+       ========================================================================== -->
+  <div class="modal-overlay" id="status-confirmation-modal">
+    <div class="modal-card">
+      <div class="modal-icon">✓</div>
+      <h3 class="modal-title">Action Successful</h3>
+      <p class="modal-message">Your request has been successfully submitted and saved in our database system.</p>
+      <div class="modal-code-box">VT-9999</div>
+      <button class="btn btn-primary modal-close-btn" style="width: 100%;">Close Window</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Brand & Socials -->
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 20px;">
+          <div class="logo-icon">VT</div>
+          <strong style="letter-spacing: 1px;">THE VEG TREAT</strong>
+        </div>
+        <p style="color: var(--text-secondary);">
+          Established in 1967, The Veg Treat Group of Hotels is a premium pure-vegetarian hospitality chain bringing culinary innovation and joy to thousands of diners every day.
+        </p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">FB</a>
+          <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <!-- Quick Navigation links -->
+      <div class="footer-col">
+        <h3>Explore Venues</h3>
+        <ul class="footer-links">
+          <li><a href="#locations" class="footer-link">Fine Dining Restaurants</a></li>
+          <li><a href="#locations" class="footer-link">Banquet Halls</a></li>
+          <li><a href="#locations" class="footer-link">Express Outlets</a></li>
+          <li><a href="#locations" class="footer-link">Boutique Hotels</a></li>
+          <li><a href="#rewards" class="footer-link">Loyalty Program</a></li>
+        </ul>
+      </div>
+
+      <!-- General Links -->
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Our Story</a></li>
+          <li><a href="#careers" class="footer-link">Join Our Team</a></li>
+          <li><a href="#blog" class="footer-link">Food Blog</a></li>
+          <li><a href="#contact" class="footer-link">Catering Inquiry</a></li>
+          <li><a href="#admin" class="footer-link">Admin Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter subscription -->
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p style="color: var(--text-secondary);">Subscribe to receive seasonal banquet discount coupons and new menu update notifications.</p>
+        <form class="newsletter-form" id="footer-newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your Email Address" required aria-label="Email for Newsletter">
+          <button type="submit" class="btn btn-primary" style="padding: 10px 16px;">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright & Legal -->
+    <div class="container footer-bottom">
+      <div>&copy; 2026 The Veg Treat Group of Hotels. All Rights Reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="#home" class="footer-link" style="font-size: 0.8rem;">Privacy Policy</a> | 
+        <a href="#home" class="footer-link" style="font-size: 0.8rem;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Modules -->
+  <script src="app.js"></script>
+</body>
+</html>
